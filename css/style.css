@@ -44,8 +44,8 @@ main{
 .email-container__item{
     padding: .625rem;
     margin: .625rem 0;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
+    border-top: 1px dotted white;
+    border-bottom: 1px dotted white;
 }
 
 .loading{
