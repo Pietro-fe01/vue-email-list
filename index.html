@@ -15,7 +15,9 @@
 </head>
 <body>
     <div id="app">
-        {{message}}
+        <div class="email-container" v-for="email in emailList">
+            {{email}}
+        </div>
     </div>
     
     <script src="js/main.js"></script>
