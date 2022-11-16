@@ -24,13 +24,18 @@ body{
     margin: auto;
 }
 
+header, main{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: .625rem;
+}
+
 /*----------------------
     HEADER
 ----------------------*/
 header{
     text-align: center;
-    background-color: #a63b35;
     padding: 1.875rem 3.125rem;
+    margin-bottom: .1875rem;
 }
 
 /*----------------------
@@ -38,7 +43,6 @@ header{
 ----------------------*/
 main{
     padding: 1.875rem;
-    background-color: #ec514d;
 }
 
 .email-container__item{
@@ -57,6 +61,39 @@ main{
 
 .loading h3{
     margin-top: .625rem;
+}
+
+/*----------------------
+    BG ANIMATION
+----------------------*/
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+
+.bg3 {
+    animation-duration:5s;
+}
+
+@keyframes slide {
+    0% {
+        transform:translateX(-25%);
+    }
+    100% {
+        transform:translateX(25%);
+    }
 }
 
 /*----------------------
