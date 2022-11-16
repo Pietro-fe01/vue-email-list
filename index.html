@@ -23,10 +23,10 @@
             <main class="email-container">
                 <!-- Qui verranno stampate tutte le mail richieste -->
                 <div v-if="emailList.length === 10" class="email-container__item" v-for="(email, index) in emailList">
-                    <span>
-                        {{index + 1}})
+                    <div>
+                        <span id="numb-gen">{{index + 1}}</span>
                         {{email}}
-                    </span>
+                    </div>
                 </div>
                 <!-- /Qui verranno stampate tutte le mail richieste -->
 

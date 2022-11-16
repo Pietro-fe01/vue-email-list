@@ -11,9 +11,11 @@ body{
     background-color: black;
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
+}
+
+#app{
+    margin: auto;
 }
 
 /*----------------------
@@ -21,11 +23,10 @@ body{
 ----------------------*/
 .container{
     max-width: 700px;
-    margin: auto;
 }
 
 header, main{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: .625rem;
     filter: drop-shadow(0px 0px 5px white);
 }
@@ -51,6 +52,18 @@ main{
     margin: .625rem 0;
     border-top: 1px dotted white;
     border-bottom: 1px dotted white;
+}
+
+.email-container__item #numb-gen{
+    display: inline-block;
+    margin-right: .625rem;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 1.25rem;
+    height: 1.25rem;
+    text-align: center;
+    line-height: 1.25rem;
 }
 
 .loading{
