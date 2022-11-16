@@ -15,7 +15,7 @@
 </head>
 <body>
     <div id="app">
-        <div class="email-container" v-for="email in emailList">
+        <div v-if="emailList.length === 10" class="email-container" v-for="email in emailList">
             {{email}}
         </div>
     </div>
