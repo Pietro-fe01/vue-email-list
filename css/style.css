@@ -52,6 +52,13 @@ main{
     margin: .625rem 0;
     border-top: 1px dotted white;
     border-bottom: 1px dotted white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email-container__item i{
+    cursor: pointer;
 }
 
 .email-container__item #numb-gen{

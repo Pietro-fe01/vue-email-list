@@ -3,10 +3,13 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            emailList: []
+            emailList: [],
         }
     },
     methods:{
+        copyText: function(i) {
+            navigator.clipboard.writeText(this.emailList[i])
+        }
     },
     created(){
         for(let i=1; i<=10; i++){
@@ -19,3 +22,4 @@ createApp({
         }
     }
 }).mount('#app')
+
