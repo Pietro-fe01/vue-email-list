@@ -30,10 +30,13 @@
                 <div v-if="emailList.length === 10" class="email-container__item" v-for="(email, index) in emailList">
                     <div>
                         <span id="numb-gen">{{index + 1}}</span>
-                        <span id="sample">{{email}}</span>
+                        <span id="sample">{{email.text}}</span>
                     </div>
-                    <div>
-                        <i class="fa-regular fa-clipboard" @click="copyText(index)"></i>
+                    <div class="copy-icon">
+                        <span v-if="email.clicked" class="create_element">
+                            {{copyMessage}}
+                        </span>
+                        <i class="fa-regular fa-clipboard" @click="copyText(email)"></i>
                     </div>
                 </div>
                 <!-- /Qui verranno stampate tutte le mail richieste -->
