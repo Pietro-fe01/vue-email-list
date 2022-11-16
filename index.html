@@ -21,16 +21,21 @@
             </header>
             
             <main class="email-container">
+                <!-- Qui verranno stampate tutte le mail richieste -->
                 <div v-if="emailList.length === 10" class="email-container__item" v-for="(email, index) in emailList">
                     <span>
                         {{index + 1}})
                         {{email}}
                     </span>
                 </div>
+                <!-- /Qui verranno stampate tutte le mail richieste -->
+
+                <!-- Qui viene mostrato il caricamento finchè non vengono generate tutte le mail -->
                 <div v-else class="loading">
                     <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
                     <h3>GENERAZIONE IN CORSO</h3>
                 </div>
+                <!-- /Qui viene mostrato il caricamento finchè non vengono generate tutte le mail -->
             </main>
         </div>
     </div>
