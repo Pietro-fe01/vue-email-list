@@ -17,7 +17,7 @@ createApp({
         copyText: function(element) {
             navigator.clipboard.writeText(element.text)
             element.clicked = true;
-            setInterval(function(){
+            setTimeout(function(){
                 element.clicked = false;
             }, 1500)
         }
